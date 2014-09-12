@@ -1,0 +1,12 @@
+Source: openvpn-auth-sqlite
+Maintainer: Cygnus Networks GmbH <debian@cygnusnetworks.de>
+Uploaders: Helmut Grohne <h.grohne@cygnusnetworks.de>
+Standards-Version: 3.9.3
+Section: net
+Priority: extra
+Build-Depends: debhelper (>= 8), libsqlite3-dev, openvpn
+
+Package: openvpn-auth-sqlite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libsqlite3, openvpn (>= 2)
+Description: OpenVPN htpasswd authentication module.
